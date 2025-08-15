@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Search Bookings">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+                label="Search Bookings" 
+                placeholder="Enter booking, customer or vehicle name" 
+                value={searchTerm} 
+                onchange={handleSearchChange}>
+            </lightning-input>
+
+            <lightning-button 
+                label="Search" 
+                variant="brand" 
+                class="slds-m-top_small"
+                onclick={handleSearch}>
+            </lightning-button>
+
+            <template if:true={bookings.length}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={bookings}
+                    columns={columns}
+                    class="slds-m-top_medium">
+                </lightning-datatable>
+            </template>
+
+            <template if:true={noResults}>
+                <p class="slds-text-color_error slds-m-top_medium">No bookings found.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

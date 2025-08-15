@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Manage Bookings">
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={bookings}
+                columns={columns}
+                hide-checkbox-column
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

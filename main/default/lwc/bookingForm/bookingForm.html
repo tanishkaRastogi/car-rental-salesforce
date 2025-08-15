@@ -1,0 +1,57 @@
+<template>
+    <lightning-card title="New Booking Form">
+        <div class="slds-p-around_medium">
+
+            <!-- Booking Name -->
+            <lightning-input
+                type="text"
+                label="Booking Name"
+                value={bookingName}
+                onchange={handleBookingNameChange}>
+            </lightning-input>
+
+            <!-- Customer -->
+            <lightning-combobox
+                name="customer"
+                label="Customer"
+                value={selectedCustomer}
+                options={customerOptions}
+                onchange={handleCustomerChange}>
+            </lightning-combobox>
+
+            <!-- Vehicle -->
+            <lightning-combobox
+                name="vehicle"
+                label="Vehicle"
+                value={selectedVehicle}
+                options={vehicleOptions}
+                onchange={handleVehicleChange}>
+            </lightning-combobox>
+
+            <!-- Start Date -->
+            <lightning-input
+                type="date"
+                label="Start Date"
+                value={startDate}
+                onchange={handleStartDateChange}>
+            </lightning-input>
+
+            <!-- End Date -->
+            <lightning-input
+                type="date"
+                label="End Date"
+                value={endDate}
+                onchange={handleEndDateChange}>
+            </lightning-input>
+
+            <!-- Submit Button -->
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    label="Submit Booking"
+                    variant="brand"
+                    onclick={handleSubmit}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
