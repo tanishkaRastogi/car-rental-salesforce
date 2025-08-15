@@ -11,14 +11,8 @@ A Salesforce application for managing a small car-rental business. Built with **
 - [Data Model](#data-model)
 - [Business Rules](#business-rules)
 - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Deploy to a Salesforce Org (SFDX)](#deploy-to-a-salesforce-org-sfdx)
-  - [Post-Deployment Steps](#post-deployment-steps)
 - [How to Use](#how-to-use)
-- [Screenshots](#screenshots)
 - [Known Issues & Notes](#known-issues--notes)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
